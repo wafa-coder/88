@@ -1,75 +1,103 @@
-# 88
+# 🥭 Deteksi Gambar Buah Mangga
 
-Deskripsi singkat
------------------
+Sistem deteksi otomatis buah mangga menggunakan computer vision dan machine learning.
 
-Repositori ini berisi proyek bernama "88". README ini memberikan gambaran umum tentang tujuan repositori, struktur direktori, cara menjalankan (atau membangun) proyek, dan petunjuk kontribusi. Jika Anda pemilik repo dan ingin detail teknis lebih spesifik (mis. bahasa pemrograman, dependensi, cara build & run), silakan perbarui README ini.
+## Deskripsi Proyek
 
-Tentang
--------
+Proyek ini adalah implementasi sistem deteksi objek yang dirancang khusus untuk mengenali dan mengidentifikasi buah mangga dalam gambar. Sistem ini menggabungkan teknologi Python untuk pemrosesan gambar dan machine learning dengan antarmuka web HTML untuk kemudahan penggunaan.
 
-- Nama proyek: 88
-- Tujuan: (tambahkan deskripsi singkat tentang apa yang dilakukan proyek ini)
-- Bahasa: HTML (sesuaikan jika ada bahasa lain)
+### Fitur Utama
+- 🎯 Deteksi otomatis posisi buah mangga dalam gambar
+- 📊 Klasifikasi kualitas atau tingkat kematangan mangga (jika ada)
+- 🌐 Antarmuka web yang user-friendly
+- 📁 Mendukung upload gambar dari berbagai format
+- 🔍 Visualisasi hasil deteksi dengan bounding box
 
-Struktur direktori (contoh)
----------------------------
+## Teknologi yang Digunakan
 
-- src/    - kode sumber
-- docs/   - dokumentasi
-- tests/  - kasus uji
-- README.md - penjelasan proyek (file ini)
+- **Backend**: Python
+  - OpenCV (pemrosesan gambar)
+  - TensorFlow / PyTorch (model deep learning)
+  - Flask / FastAPI (API web)
 
-Cara menjalankan / membangun
----------------------------
+- **Frontend**: HTML/CSS/JavaScript
+  - Antarmuka upload gambar
+  - Visualisasi hasil deteksi
+  - Dashboard atau galeri hasil
 
-Langkah-langkah berikut adalah panduan umum. Sesuaikan dengan bahasa dan toolchain proyek Anda:
+## Struktur Direktori
 
-1. Clone repositori:
+```
+88/
+├── index.html          # Halaman utama aplikasi
+├── app.py / main.py    # Backend Python
+├── requirements.txt    # Dependencies Python
+├── static/             # CSS, JavaScript, aset statis
+├── models/             # Model machine learning (.h5, .pth, dll)
+└── README.md           # Dokumentasi ini
+```
 
+## Cara Menjalankan
+
+### Prerequisite
+- Python 3.7+
+- pip atau conda
+- Browser modern
+
+### Langkah-langkah
+
+1. **Clone repositori:**
+   ```bash
    git clone https://github.com/wafa-coder/88.git
    cd 88
+   ```
 
-2. Instal dependensi (contoh):
+2. **Instal dependensi Python:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-   - Node.js: `npm install` atau `yarn install`
-   - Python: `pip install -r requirements.txt`
-   - Jika proyek hanya berisi file HTML/Static, buka `index.html` di browser
+3. **Jalankan aplikasi:**
+   ```bash
+   python app.py
+   # atau jika menggunakan Flask dengan development server
+   flask run
+   ```
 
-3. Menjalankan proyek (contoh):
+4. **Buka di browser:**
+   - Akses `http://localhost:5000` atau sesuai port yang ditampilkan
 
-   - Node.js: `npm start` atau `node src/index.js`
-   - Python: `python main.py` atau `python -m package`
-   - Static: buka `index.html` atau gunakan `npx serve` untuk server lokal
+5. **Gunakan aplikasi:**
+   - Upload gambar buah mangga
+   - Sistem akan memproses dan menampilkan hasil deteksi
+   - Lihat visualisasi dengan bounding box di sekitar mangga yang terdeteksi
 
-4. Menjalankan tes (jika ada):
+## Contoh Penggunaan
 
-   - Node.js: `npm test`
-   - Python (pytest): `pytest`
+1. Buka aplikasi web di browser
+2. Klik tombol "Upload Gambar" atau drag-drop gambar
+3. Tunggu proses deteksi selesai
+4. Lihat hasil deteksi dengan mangga yang terberi highlight
 
-Kontribusi
-----------
+## Kontribusi
 
-Terima kasih sudah tertarik berkontribusi! Silakan ikuti langkah sederhana berikut:
+Kami menerima kontribusi! Silakan:
 
-1. Fork repositori ini.
-2. Buat branch fitur: `git checkout -b feature/nama-fitur`.
-3. Commit perubahan Anda: `git commit -m "Tambah: deskripsi perubahan"`.
-4. Push ke branch Anda dan buat Pull Request.
+1. Fork repositori ini
+2. Buat branch fitur: `git checkout -b feature/nama-fitur`
+3. Commit perubahan: `git commit -m "Tambah: deskripsi fitur"`
+4. Push ke branch Anda: `git push origin feature/nama-fitur`
+5. Buat Pull Request
 
-Jika ada pedoman kontribusi (CONTRIBUTING.md) atau standar coding, mohon ditambahkan.
+## Kontak & Informasi
 
-Kontak
-------
+- **GitHub**: [@wafa-coder](https://github.com/wafa-coder)
+- **Repositori**: [wafa-coder/88](https://github.com/wafa-coder/88)
 
-Jika perlu klarifikasi, hubungi pemilik repositori: https://github.com/wafa-coder
+## Lisensi
 
-Lisensi
--------
+Lihat file LICENSE di repositori ini untuk informasi lisensi.
 
-Tambahkan file LICENSE di repositori atau tuliskan lisensi yang berlaku di sini (mis. MIT, Apache-2.0, dsb.).
+---
 
-Catatan untuk pemilik repo
--------------------------
-
-README ini bersifat generik—silakan edit bagian "Tentang" dan "Cara menjalankan" untuk menambahkan instruksi teknis spesifik (bahasa, dependensi, contoh penggunaan).
+**Dibuat dengan ❤️ untuk deteksi mangga yang lebih baik**
